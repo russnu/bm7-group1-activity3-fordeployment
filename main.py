@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 import seaborn as sns
-import io
+# import io
 
 st.markdown("# **Group Activity 2**")
 st.markdown("""
