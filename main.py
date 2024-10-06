@@ -248,6 +248,15 @@ st.markdown("""Pie chart shows the proportions of URLs with and without punycode
 st.markdown("---")
 st.markdown("### **Agor**")
 
+
+st.image("agorgraph1.png")
+st.markdown("""The pie chart shows the distribution of URLs with and without internal links, where the majority (***97.6%***) of URLs do not 
+            contain internal links, while a smaller portion (2.4%) does contain internal links.""")
+
+
+st.image("agorgraph2.png")
+st.markdown("""The bar chart indicates that there are equal numbers of legitimate and phishing urls in the dataset, ***1,250,000*** for each.""")
+
 # ================================================================================================================================== #
 st.markdown("---")
 st.markdown("## **Conclusion**")
