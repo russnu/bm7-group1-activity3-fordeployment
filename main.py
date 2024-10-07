@@ -117,16 +117,44 @@ st.dataframe(df)
 st.markdown("---")
 st.markdown("### Count of legitimate and phishing URLs")
 
+data = {
+    'label': ['legitimate', 'phishing'],
+    'count': [1250000, 1250000]
+}
+
+df = pd.DataFrame(data)
+df.set_index('label', inplace=True)
+
+st.dataframe(df)
+
 
 # ====================================== #
 st.markdown("---")
 st.markdown("### Count of URLs based on sources")
+data = {
+    'source': ['Phishing.Database', 'Majestic', 'Cisco-Umbrella',
+        'PhishTank', 'OpenPhish-Community'],
+    'count': [1168700, 653049, 596951, 80821, 479]
+}
 
+df = pd.DataFrame(data)
+df.set_index('source', inplace=True)
+
+st.dataframe(df)
 
 # ====================================== #
 st.markdown("---")
 st.markdown("### Count of URLs based on whether they start with an IP address or not")
 
+data = {
+    'starts_with_ip': [False, True],
+    'count': [2473282, 26718]
+}
+
+df = pd.DataFrame(data)
+df.set_index('starts_with_ip', inplace=True)
+
+st.dataframe(df)
 
 # ====================================== #
 st.markdown("---")
